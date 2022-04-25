@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- bai1
+    <script>
+        let arr = [];
+        let count = 0;
+        let x = 0;
+        do {
+            let number = parseInt(prompt('Enter 10 numbers: '));
+            arr[x] = number;
+            x++;
+        } while (x <10)
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] >= 10) {
+                count = count + 1;
+            }
+        } alert(`So >=10 trong mang la: ${count}`)      
+    </script> -->
+
+    <!-- bai2 -->
+    <!-- <script>
+        let arr = [];
+        let max = 0;
+        let k = 0;
+        let index;
+        do {
+            let number = Number(prompt('Enter 10 numbers: '));
+            arr[k] = number;
+            k++;
+        } while (k<10)
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
+                index = i;
+            }
+        } alert(`Gia tri lon nhat la: ${max} at index: ${index}`) -->
+    <!-- </script> -->
+
+    <!-- bai3 -->
+    <!-- <script>
+        let arr = [];
+        let k = 0;
+        let number;
+        let max = 0;
+        let index = 0;
+        let sum = 0;
+        do {
+            number = Number(prompt('Nhap gia tri a(nhap 1 ky tu bat ky de ket thuc): '));
+            if (Number.isInteger(number)) {
+                arr[k] = number;
+            }
+            k++;
+        } while (Number.isInteger(number))
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
+                index = i;
+            }
+            sum += arr[i] / arr.length;
+        }
+        document.write(`Gia tri lon nhat la: ${max} at index: ${index} with average: ${sum}`)
+    </script> -->
+
+    <!-- bai4 -->
+    <!-- <script>
+        let arr = [];
+        let k = 0;
+        do {
+            numbers = Number(prompt('Nhap gia tri: '));
+            if (Number.isInteger(numbers)) {
+                arr[k] = numbers;
+            }
+            k++;
+        } while (Number.isInteger(numbers))
+        for (let i = 0; i < arr.length; i++) {
+        }
+        document.write(arr.reverse())
+    </script> -->
+
+    <!-- bai5 -->
+    <!-- <script>
+        let arr = 0;
+        let max = 0;
+        let k = 0;
+        let count = 1;
+        do {
+            numbers = Number(prompt('Nhap gia tri: '));
+            if (Number.isInteger(numbers)) {
+                arr[k] = numbers;
+            }
+            k++;
+        }while (Number.isInteger(numbers))
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] < 0) {
+                count++
+            }
+        }
+        document.write(`Gom co ${count} so am`)
+    </script> -->
+
+    <!-- bai6 -->
+    <!-- <script>
+        let arr = [];
+        let k = 0;
+        let sungha;
+        let V = 123;
+        do {
+            V = Number(prompt('Nhap gia tri: '));
+            arr[k] = V;
+            k++;
+        }
+        while (k < 10)
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] == V) {
+                sungha = 'V is in the array';
+                break;
+            } else {
+                sungha = 'V is not in the array';
+            }
+        }
+        document.write(sungha)
+    </script> -->
+
+    <!-- bai7 -->
+    <!-- <script>
+        let arr = [];
+        let k = 0;
+        do {
+            let numbers = Number(prompt('Nhap gia tri: '));
+            arr[k] = numbers;
+            k++;
+        }
+        while (k < 10)
+        let V = Number(prompt('Nhap gia tri V: '));
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] == V) {
+                arr.splice(i, 1);
+                arr.push(0);
+            }
+        }
+        document.write(arr)
+    </script> -->
+
+    <!-- bai8 -->
+    <!-- <script>
+        let arr = [];
+        let k = 0;
+        do {
+            let numbers = Number(prompt('Nhap gia tri: '));
+            arr[k] = numbers;
+            k++
+        }while (k < 10)
+        let new_arr = arr.map(function(a, b) {
+            return a-b;
+        })
+        document.write(new_arr)
+    </script> -->
+
+    <!-- bai9 -->
+    <script>
+        let arrA = [], arrB = [], arrC = [], new_arr;
+        let k = 0;
+        do {
+            numbers_A = Number(prompt('Nhap gia tri: '));
+            arrA[k] = numbers_A;
+            k++;
+        } while (k< 5)
+
+        do {
+            numbers_B = Number(prompt('Nhap gia tri: '));
+            arrB[k] = numbers_B;
+            k++;
+        } while (k< 5)
+
+        do {
+            numbers_C = Number(prompt('Nhap gia tri: '));
+            arrC[k] = numbers_C;
+            k++;
+        } while (k< 10)
+        new_arr = arrA.concat(arrB);
+        for (let i = 0; i < arrC.length; i++) {
+            for (let j = 0; j < new_arr.length; i++) {
+                if (new_arr[j] == arrC[i]){
+                    new_arr[j] = arrC[i];
+                }
+            }
+        }
+        document.write(new_arr)
+    </script>
+</body>
+
+</html>
